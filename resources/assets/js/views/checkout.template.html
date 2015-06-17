@@ -1,0 +1,21 @@
+<h1>
+    Shirt Checkout
+    <small v-text="cost | coupon | currency"></small>
+</h1>
+
+<form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="coupon">Coupon:</label>
+        <coupon when-applied="{{ applyDiscount }}"></coupon>
+    </div>
+</form>

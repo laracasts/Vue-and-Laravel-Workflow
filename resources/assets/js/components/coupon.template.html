@@ -1,0 +1,9 @@
+<input type="text"
+       name="coupon"
+       id="coupon"
+       class="form-control"
+       v-model="coupon.code"
+       v-on="blur: validate"
+       v-attr="readonly: valid">
+
+<p class="label label-primary" v-text="coupon.description"></p>
